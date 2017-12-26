@@ -10,6 +10,9 @@ envFileContent.split('\n').forEach(x => {
   if (x.trim() === '') return;
 
   const [name, value] = x.split(/=(.+)?/, 2);
+
+  if (!value) return;
+
   output.env.push({
     name,
     value,
