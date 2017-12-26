@@ -9,16 +9,14 @@ const output = {
 envFileContent.split('\n').forEach(x => {
   if (x.trim() === '') return;
 
-  const [name, value] = x.split('=');
-
+  const [name, value] = x.split(/=(.+)?/, 2);
   output.env.push({
     name,
     value,
   });
 });
 
-const result = yaml.safeDump(output)
-
+const result = yaml.safeDump(output);
 fs.writeFileSync('env.yaml', result);
 
 console.log('Done.');
