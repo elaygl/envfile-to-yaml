@@ -1,0 +1,32 @@
+{
+  "name": "envfile-to-yaml",
+  "version": "0.1.0",
+  "description": "easy env file to yaml converter",
+  "main": "index.js",
+  "dependencies": {
+    "argparse": "^1.0.9",
+    "esprima": "^4.0.0",
+    "js-yaml": "^3.10.0",
+    "sprintf-js": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elaygl/envfile-to-yaml.git"
+  },
+  "keywords": [
+    "envfile",
+    "yaml",
+    "converter",
+    "kubernetes"
+  ],
+  "author": "elaygl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elaygl/envfile-to-yaml/issues"
+  },
+  "homepage": "https://github.com/elaygl/envfile-to-yaml#readme"
+}
